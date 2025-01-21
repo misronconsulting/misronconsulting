@@ -1,4 +1,5 @@
-import { Box, Flex, Text, VStack, Link } from "@chakra-ui/react"
+import { Box, Flex, Text, VStack } from "@chakra-ui/react";
+import { Link as RouterLink } from "react-router-dom"; // Import RouterLink from react-router-dom
 
 const Footer = () => {
   return (
@@ -14,18 +15,18 @@ const Footer = () => {
           <Text fontSize="lg" fontWeight="semibold" mb={2}>
             Quick Links
           </Text>
-          <Link href="/" _hover={{ color: "brand.200" }}>
+          <RouterLink to="/" style={{ textDecoration: 'none', color: 'white' }} onMouseEnter={(e) => e.target.style.color = 'brand.200'} onMouseLeave={(e) => e.target.style.color = 'white'}>
             Home
-          </Link>
-          <Link href="/about" _hover={{ color: "brand.200" }}>
+          </RouterLink>
+          <RouterLink to="/about" style={{ textDecoration: 'none', color: 'white' }} onMouseEnter={(e) => e.target.style.color = 'brand.200'} onMouseLeave={(e) => e.target.style.color = 'white'}>
             About
-          </Link>
-          <Link href="/services" _hover={{ color: "brand.200" }}>
+          </RouterLink>
+          <RouterLink to="/services" style={{ textDecoration: 'none', color: 'white' }} onMouseEnter={(e) => e.target.style.color = 'brand.200'} onMouseLeave={(e) => e.target.style.color = 'white'}>
             Services
-          </Link>
-          <Link href="/contact" _hover={{ color: "brand.200" }}>
+          </RouterLink>
+          <RouterLink to="/contact" style={{ textDecoration: 'none', color: 'white' }} onMouseEnter={(e) => e.target.style.color = 'brand.200'} onMouseLeave={(e) => e.target.style.color = 'white'}>
             Contact
-          </Link>
+          </RouterLink>
         </VStack>
         <VStack align="start">
           <Text fontSize="lg" fontWeight="semibold" mb={2}>
@@ -40,8 +41,7 @@ const Footer = () => {
         &copy; {new Date().getFullYear()} Misron Consulting. All rights reserved.
       </Text>
     </Box>
-  )
+  );
 }
 
-export default Footer
-
+export default Footer;
