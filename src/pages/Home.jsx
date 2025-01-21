@@ -21,13 +21,13 @@ const Home = () => {
           </Box>
 
           {/* Image Section */}
-          <Image 
-            src="src/assets/COLAB.jpg" // Ensure this path is correct
+          {/* <Image 
+            src="/COLAB.jpg" // Ensure this path is correct
             alt="Professional Collaboration"
             borderRadius="md"
             boxSize={{ base: '100%', md: '500px' }}
             objectFit="cover"
-          />
+          /> */}
         </SimpleGrid>
 
         {/* Services Section */}
